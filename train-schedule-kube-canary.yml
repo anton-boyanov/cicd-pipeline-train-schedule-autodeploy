@@ -36,7 +36,7 @@ spec:
       - name: train-schedule
         image: $DOCKER_IMAGE_NAME:$BUILD_NUMBER
         ports:
-        - containerPort: 45000
+        - containerPort: 8080
         livenessProbe:
           httpGet:
             path: /
